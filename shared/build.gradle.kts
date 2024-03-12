@@ -8,6 +8,16 @@ kotlin {
     jvm()
     androidTarget()
 
+    listOf(
+        iosArm64(),
+        iosX64(),
+        iosSimulatorArm64()
+    ).forEach { iosTarget ->
+        iosTarget.binaries.framework {
+            baseName = "shared"
+        }
+    }
+
     sourceSets {
         commonMain {
             dependencies {
