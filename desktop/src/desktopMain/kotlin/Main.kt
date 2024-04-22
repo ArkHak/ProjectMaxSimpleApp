@@ -3,7 +3,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import ru.mysin_o.project_max_simple_app.SayHelloFromCommon
+import ru.mysin_o.project_max_simple_app.root.RootScreen
 import ru.mysin_o.project_max_simple_app.sayHello
 
 fun main() {
@@ -18,7 +18,7 @@ fun main() {
             state = state,
             title = "ProjectMaxSimpleApp"
         ) {
-            SayHelloFromCommon()
+            RootScreen()
         }
     }
 }
